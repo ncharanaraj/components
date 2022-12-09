@@ -1,0 +1,29 @@
+body {
+    display: grid;
+    height: 200px;
+    grid-template-areas: "head head head" "nav menu menu" "footer footer footer";
+    grid-template-rows: 30px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+    text-align: center;
+}
+
+header {
+    grid-area: head;
+    background-color: lightsalmon;
+}
+
+.nav-bar {
+    grid-area: nav;
+    background-color: lightblue;
+}
+
+main {
+    grid-area: menu;
+    background-color: lightyellow;
+}
+
+footer {
+    grid-area: footer;
+    background-color: firebrick;
+}
+
