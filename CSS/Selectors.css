@@ -1,0 +1,64 @@
+*{
+    color: #06b6d4;
+}
+
+a {
+padding: 0.5em;
+display: block;
+font-size: 1.2em;
+}
+
+
+/* Group Selector */
+
+
+/* Star selector 
+
+||Syntax
+
+* {
+    property: value;
+}
+
+*/
+
+/*
+li:nth-of-type(2){
+    color: goldenrod;
+}
+
+li:nth-child(3) {
+    color: #fb7185;
+}
+
+ nth-of-type and nth-of-child selectors
+
+||syntax of nth-child
+
+element:nth-child(n) {
+    property: value;
+}
+
+||syntac of nth-type
+
+element:nth-of-type(n) {
+    property: value;
+}
+
+*/
+
+
+/* Attribute selector = The Attribute selector has several syntax variations. 
+
+a[href="https://about.meta.com/"] {
+    color: red;
+}
+a[href*=".com"] {
+    color: purple   ;
+}
+
+a[class] {
+    color: darkgreen;
+} 
+
+*/

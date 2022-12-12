@@ -1,0 +1,85 @@
+:root {
+    --heading-color: #15803d;
+    --heading-decor-color: #14532d;
+    --second-heading-color: #0891b2;
+    --first-letter-color: #f59e0b;
+    --under-line-color: #000000;
+}
+
+
+h1 {
+    color: var(--heading-color);
+    text-decoration: underline var(--heading-decor-color) double 2px; 
+}
+
+li > h2 {
+    color: var(--second-heading-color);
+    text-decoration: underline var(--heading-decor-color) dashed 2px;
+}
+
+#pointer::marker {
+    content: '|| ';
+    font-size: 1.5em;
+    color: var(--under-line-color);
+    font-weight: bolder;
+}
+
+#symbol::before {
+    content: "::";
+}
+
+/* First-letter */
+
+.start::first-letter {
+    color: var(--first-letter-color);
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* first-line */
+
+li .eraseStyle {
+    list-style-type: none;
+}
+
+.first-line-style::first-line {
+    color: var(--first-letter-color);
+    line-height: 1;
+    text-decoration: underline var(--under-line-color) solid 1px;
+}
+
+/* selection */
+
+.text-selection::selection {
+    color: var(--first-letter-color);
+    background-color: var(--heading-color);
+    line-height: 1;
+}
+
+/* marker */
+
+.mark::marker {
+    color: var(--first-letter-color);
+    content: '<> ';
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* before & after */
+#text::before {
+    background: darkkhaki;
+    color:darkslategray;
+    content: "Tip:";
+    padding-left: 3px;
+    padding-right: 5px;
+    border-radius: 10%;
+}
+
+#text::after {
+    background:darkkhaki;
+    color:darkslategray;
+    content: "!!";
+    padding-right: 5px;
+    border-radius: 10%;
+}
