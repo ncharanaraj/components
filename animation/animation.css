@@ -11,7 +11,7 @@
   margin: auto;
   right: 0;
   background: black;
-  transform-origin: bottom center;
+  transform-origin: bottom;
   transform: rotate(0deg);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
   position: absolute;
