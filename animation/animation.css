@@ -1,0 +1,38 @@
+.clock {
+    background-color: bisque;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border: 4px solid coral;
+    border-radius: 100%;
+}
+
+.hand {
+  margin: auto;
+  right: 0;
+  background: black;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  position: absolute;
+  height: 100px;
+  width: 4px;
+  left: 0;
+}
+
+.minutes {
+    animation: cycle 6s infinite linear;
+}
+
+.hours {
+    animation: cycle 60s infinite linear;
+}
+
+@keyframes cycle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
