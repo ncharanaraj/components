@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texteffect - overflow</title>
+
+    <!-- css -->
+
+    <style>
+        :root {
+            --text-color: #fbbf24
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        h1 {
+            color: var(--text-color);
+            text-decoration: underline red solid 2px;
+        }
+
+        .text {
+            width: 300px;
+            border: 2px solid var(--text-color);
+            white-space: nowrap; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .text:hover {
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ellipse property</h1>
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima cum quia at vitae!</p>
+</body>
+</html>
