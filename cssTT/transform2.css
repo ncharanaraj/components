@@ -10,7 +10,7 @@
 
 .box:hover {
     transform: rotateZ(60deg);
-    background-color: lightcoral;
+    background-color: #f08080;
     opacity: 50%;
     transition: 2s;
 }
