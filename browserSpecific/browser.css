@@ -1,0 +1,25 @@
+/* Only for safari browser
+@media not all and (min-resolution:.001dpcm) {
+    supports (-webkit-appearance: none) and (display: flow-root) {
+        .selector {
+            propery: value;
+        }
+    }
+} */
+
+
+/* Chrome version 29 and above
+@media screen and (-webkit-device-pixel-ratio:0) and (min-resolution:.001dpcm){
+    selector {
+        property: value;
+    }
+} */
+
+/* General Query
+
+@media (-webkit-device-pixel-ration: 1) {
+    p {
+        color: red;
+    }
+} */
+
